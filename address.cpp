@@ -87,7 +87,8 @@ int main() {
 
     try {
         if (!(isItaNumber(streetNumber))) {
-            std::cout << streetNumber << " is not a valid street number" << std::endl;
+            std::cout
+            << streetNumber << " is not a valid street number" << std::endl;
             throw std::invalid_argument("not a number\n");
         }
         std::cout << "\n"
@@ -95,7 +96,8 @@ int main() {
 
         if (apartementNumber != "") {
             if (!(isItaNumber(apartementNumber))) {
-                std::cout << apartementNumber << " is not a valid apartment number" << std::endl;
+                std::cout
+        << apartementNumber << " is not a valid apartment number"<< std::endl;
                 throw std::invalid_argument("not a number\n");
             }
             properAddress = address(fullName, streetNumber, streetName, city,
